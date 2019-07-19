@@ -33,7 +33,7 @@ function! s:CompileLatex()
 endfunction
 
 function! s:OpenPdf(pdf_viewer)
-    call s:CompileLatex()
+    execute "silent !". g:latex_engine. " % &>/dev/null && pkill -HUP mupdf &> /dev/null"
     execute "silent !" .a:pdf_viewer. " %:r.pdf &> /dev/null &"
     redraw!
 endfunction
