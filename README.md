@@ -6,10 +6,11 @@
 ## Dependencies
 
 * vim
-* pandoc
+* pdfviewer
     * Evince (Works on Mac)
     * Mupdf
     * Okular
+* pdflatex (or another latex engine).
 
 For async support (Compiling in background)
 
