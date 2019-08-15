@@ -43,7 +43,7 @@ let g:latex_pdf_viewer="<previewer>"
 
 ### Choosing a latex engine
 
-By default pdflatex will be used. Replace <engine> with your engine of choice i.e xelatex.
+By default pdflatex will be used. Replace <engine> with your engine of choice e.g xelatex.
 
 ```
 let g:latex_engine="<engine>"
