@@ -48,3 +48,11 @@ By default pdflatex will be used. Replace <engine> with your engine of choice e.
 ```
 let g:latex_engine="<engine>"
 ```
+
+### Cleaning generated files
+
+By default we don't remove LaTeX generated files: .log, .out and .aux file. To remove them automatically, set to 1
+
+```
+let g:latex_preview_clean = 1
+```
