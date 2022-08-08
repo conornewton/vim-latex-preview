@@ -35,6 +35,9 @@ endfunction
 function! s:OpenPdf(pdf_viewer)
     execute "silent !". g:latex_engine. " % &>/dev/null && pkill -HUP mupdf &> /dev/null"
     execute "silent !" .a:pdf_viewer. " %:r.pdf &> /dev/null &"
+    if exists('g:latex_preview_clean') && g:latex_preview_clean
+        execute "silent ! rm *.aux *.out *.log"
+    endif
     redraw!
 endfunction
 
